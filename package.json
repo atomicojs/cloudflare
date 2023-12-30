@@ -1,6 +1,6 @@
 {
   "name": "@atomico/cloudflare",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "@atomico/vite + @atomico/cloudflare",
   "type": "module",
   "publishConfig": {

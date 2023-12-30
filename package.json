@@ -1,15 +1,39 @@
 {
   "name": "@atomico/cloudflare",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "@atomico/vite + @atomico/cloudflare",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "types": "tsc",
+    "exports": "exports \"dist/**/*\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "UpperCod",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/atomicojs/cloudflare.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomicojs/cloudflare/issues"
+  },
+  "homepage": "https://github.com/atomicojs/cloudflare#readme",
   "dependencies": {
     "@cloudflare/workers-types": "^4.20231218.0"
+  },
+  "devDependencies": {
+    "@atomico/exports": "^1.13.1",
+    "@atomico/tsconfig": "^1.1.2",
+    "typescript": "^5.3.3"
+  },
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {}
   }
 }

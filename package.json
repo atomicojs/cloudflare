@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "types": "tsc",
-    "exports": "exports \"dist/**/*\""
+    "exports": "exports \"dist/**/*\"",
+    "prepare": "npm run types && npm run exports"
   },
   "keywords": [],
   "author": "UpperCod",

@@ -1,4 +1,4 @@
-import { KVNamespace, EventContext } from "@cloudflare/workers-types";
+import type { KVNamespace, EventContext } from "@cloudflare/workers-types";
 
 type Context = EventContext<any, any, any>;
 

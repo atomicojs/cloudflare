@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "@atomico/vite + @atomico/cloudflare",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "types": "tsc",
     "exports": "exports \"dist/**/*\"",

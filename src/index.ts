@@ -18,13 +18,19 @@ export const load = (
   return result;
 };
 
+export const useContext = () => LOCAL.context;
+
 export const useKv = <Key extends string>(
   NAMESPACE: string
-): KVNamespace<Key> => LOCAL.context?.env[NAMESPACE];
+): KVNamespace<Key> => useContext()?.env[NAMESPACE];
 
 export const useWaitUntil = () => {
-  const { context } = LOCAL;
+  const context = useContext();
   return (promise: Promise<any>) => context?.waitUntil(promise);
 };
 
-export const useRequest = () => LOCAL.context?.request;
+export const useRequest = () => useContext().request;
+
+export const useEnv = () => useContext().env;
+
+export const useMiddleware = () => useContext().next;

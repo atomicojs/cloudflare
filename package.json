@@ -1,6 +1,6 @@
 {
   "name": "@atomico/cloudflare",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "@atomico/vite + @atomico/cloudflare",
   "type": "module",
   "publishConfig": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/atomicojs/cloudflare#readme",
   "dependencies": {
-    "@cloudflare/workers-types": "^4.20231218.0"
+    "@cloudflare/workers-types": "*"
   },
   "devDependencies": {
     "@atomico/exports": "^1.13.1",
